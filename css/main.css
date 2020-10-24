@@ -1,15 +1,13 @@
-.col-md-4 > img {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-}
-.text3 {
-    color: red;
+.text2 {
+    font-weight: bold;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
 }
 
 .img-fluid {
     max-width : 100%;
     height: auto;
+    border: 1px groove black;
 }
 
 #inner2 {
@@ -66,9 +64,11 @@ h1 {
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 300px;
     transition: .5s ease;
     backface-visibility: hidden;
+    object-fit: cover;
+    object-position: center;
   }
   
   .middle {
@@ -89,13 +89,22 @@ h1 {
     opacity: 1;
   }
   
-  .text {
-    background-color: black;
-    color: white;
+  .textH {
+    background-color: rgb(212, 212, 212);
+    color: rgb(129, 19, 19);
     font-size: 22px;
     font-weight: 700;
-    padding: 16px 32px;
+    padding: 16px 16px;
+    border: rgb(255, 18, 2) 1px solid;
+  }
+  .text {
+    background-color: rgb(116, 115, 115);
+    color: rgb(9, 44, 2);
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 16px;
+    border: rgb(36, 87, 6) 1px solid;
   }
   .Hover {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
   }
