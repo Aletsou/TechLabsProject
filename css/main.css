@@ -10,10 +10,6 @@
     border: 1px groove black;
 }
 
-#inner2 {
-    height: calc(100%-900px);
-}
-
 #inner_remaining {
     height: 800px;
     background-repeat: no-repeat;
@@ -24,8 +20,13 @@
     background-position: center;
 }
 
-#ul {
+ul {
     font-family: 'Staatliches', cursive;
+    list-style-type: none;
+    font-size: 17px;
+}
+#ul {
+  font-size: 32px;
 }
 h1 {
     font-family: 'Krona One', sans-serif;
@@ -108,3 +109,60 @@ h1 {
   .Hover {
       margin-bottom: 15px;
   }
+  .modal-header > .modal-title {
+    text-align: center;
+    color: whitesmoke;
+  }
+  .modal-body > ul > li {
+    color: chartreuse;
+    font-size: 24px;
+  }
+  .modal-body > ul > p {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 17px;
+  }
+  .modal-body {
+    background-image: url('/images/hi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .modal-header {
+    background-color: black;
+  }
+  .modal-wrapper > .modal-body {
+    background-image: url('/images/cont.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .modal-wrapper > .modal-body > form {
+    color: rgba(212, 212, 14, 0.966);
+  }
+  .modal-footer {
+    background-color: black;
+    color: rgba(212, 212, 14, 0.966);
+  }
+  .modal-footer > button {
+    background-color: black;
+    color: lawngreen;
+  }
+  .wrapper > .modal-body {
+    background-image: url('/images/cont1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper > .modal-body > ul > li {
+    color: rgb(25, 80, 8);
+    font-size: 24px;
+    text-align: left;
+  }
+
+.wrapper > .modal-body > ul > p {
+  color: rgb(206, 202, 6);
+  text-transform: lowercase;
+  text-align: left;
+}

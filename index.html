@@ -22,13 +22,13 @@
               <div class="collapse navbar-collapse" id="navcollapse">
                   <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <a class="nav-link">Home</a>
+                          <a class="nav-link" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link">About us</a>
+                          <a data-toggle="modal" href="#modal1" class="nav-link">About us</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" data-toggle="modal" href="#modal2">Contact</a>
                       </li>
                   </ul>
                   <form class="form-inline my-2">
@@ -72,7 +72,7 @@
                 <img class="w-100" src="images/help.jpg" alt="third slide">
                 <div class="carousel-caption">
                     <div class="text2">
-                        <h4>Mr.Intenet,how can i help you? </h4>
+                        <h4>Mr.Internet,how can i help you? </h4>
                         <p>Knowledge is not barred behind school walls, get comfortable using the Web for learning things, once thought impossible.</p>
                     </div>
                     
@@ -155,11 +155,11 @@
       <div class="container-fluid bg-dark">
           <div class="row text-center">
               <div class="col-md-7 text-light font-italic">
-                  <p>Sign up for our newsletter!</p>
+                  <p>Subscribe for our newsletter!</p>
               </div>
               <div class="col-md-5">
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal">
-                      Sign up here!
+                      Subscribe!
                   </button>
               </div>
           </div>
@@ -170,30 +170,32 @@
       <div class="modal fade" id="modal">
           <div class="modal-dialog">
               <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Almost there!</h5>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <div class="modal-header">
+                           <h5 class="modal-title">Almost there!</h5>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                  </div>
-                  <div class="modal-body">
-                      <form>
-                          <div class="form-group">
-                              <label for="nameInput">Your name</label>
-                              <input type="text" class="form-control" id="nameInput" placeholder="enter your name">
+                     </div>
+                     <div class="modal-wrapper">
+                       <div class="modal-body">
+                           <form>
+                                 <div class="form-group">
+                                  <label for="nameInput">Your name</label>
+                                  <input type="text" class="form-control" id="nameInput" placeholder="enter your name">
 
-                          </div>
-                          <div class="form-group">
-                            <label for="emailInput">Your email</label>
-                            <input type="email" class="form-control" id="emailInput" placeholder="enter your email">
+                                </div>
+                                <div class="form-group">
+                                   <label for="emailInput">Your email</label>
+                                   <input type="email" class="form-control" id="emailInput" placeholder="enter your email">
 
-                          </div>
-                          <div class="form-group">
-                            <label for="address">Your adress</label>
-                            <textarea class="form-control" id="adress" rows="3" placeholder="enter your adress"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label for="address">Your adress</label>
+                                  <textarea class="form-control" id="adress" rows="3" placeholder="enter your adress"></textarea>
 
-                          </div>
+                               </div>
 
-                  </div>
+                       </div>
+                     </div>
                   <div class="modal-footer justify-content-between">
                       <div class="form-check form-check-inline">
                           <input type="checkbox" class="form-check-input" id="emailInput" value="option1">
@@ -217,17 +219,72 @@
           </div>
       </div>
 
+
+
+      <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">About us</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Alexandros Tsoulakidis</li>
+                      <p><em>Co-Creator of WeLearn</em></p>
+                      <p><em>PhEd grad, passionate barista</em></p>
+                      <br>
+                    <li>Christin Santos</li>
+                      <p><em>Co-Creator of WeLearn</em></p>
+                  </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact us!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+              <div class="wrapper"> 
+                <div class="modal-body">
+                  <ul>
+                    <li>Central office</li>
+                      <p><em>Friedrichstrasse 125, Berlin Mitte, 13347</em></p>
+                    <li>Via Phone</li>
+                      <p><em>+49 1768246884</em></p>
+                    <li>Via Email</li>
+                      <p><em>al.tsoulakidis@gmail.com</em></p>
+                      <p><em>chr.santos@gmail.com</em></p>
+                  </ul>
+
+                </div>
+             </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
       <footer class="container bg-light py-4">
           <p class="float-right"><a href="#">Back to top</a></p>
           <p> &copy; 2020 WeLearn &middot;
               <a href="">Home</a> &middot;
-              <a href="">Contact</a>
+              <a data-toggle="modal" href="#modal2">Contact</a>
           </p>
 
       </footer>
 
     <script src="/js/main.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
