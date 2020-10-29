@@ -27,14 +27,31 @@ html, body {
     background-position: center;
 }
 
-ul {
+.ul {
     font-family: 'Staatliches', cursive;
-    list-style-type: none;
     font-size: 17px;
+    background: none;
+    color: rgb(31, 81, 231);
 }
 #ul {
   font-size: 32px;
+  position: relative;
+  width: 450px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0, .1);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  overflow: hidden;
 }
+#ul>li,a {
+display: flex;
+justify-content: center;
+background: rgb(255, 255, 255, .1);
+color: #fff;
+transition: .5s;
+}
+
 h1 {
     font-family: 'Krona One', sans-serif;
     font-size: 40px;
